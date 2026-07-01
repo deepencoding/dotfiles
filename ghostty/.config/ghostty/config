@@ -1,0 +1,21 @@
+# ~/.config/ghostty/config
+# Ghostty ships with excellent defaults — this stays deliberately tiny.
+# Docs: ghostty +show-config --default --docs
+
+font-family = JetBrainsMono Nerd Font
+font-size = 13
+
+theme = tokyonight
+
+# Slight padding so text doesn't kiss the edges
+window-padding-x = 8
+window-padding-y = 8
+
+# macOS: use Option as Alt so tmux/nvim Alt-bindings work
+macos-option-as-alt = true
+
+# Don't quit when last window closes (macOS convention)
+quit-after-last-window-closed = false
+
+# Shell integration (auto-detected, but be explicit for fish)
+shell-integration = fish

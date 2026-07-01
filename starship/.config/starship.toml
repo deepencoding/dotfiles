@@ -1,0 +1,26 @@
+# ~/.config/starship.toml
+# Minimal prompt: path, git, language when relevant, duration when slow.
+
+add_newline = true
+command_timeout = 1000
+
+format = """
+$directory$git_branch$git_status$python$golang$nodejs$terraform$cmd_duration
+$character"""
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+
+[git_status]
+style = "yellow"
+
+[cmd_duration]
+min_time = 2000        # only show if command took > 2s
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"

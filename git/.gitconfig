@@ -1,0 +1,53 @@
+# ~/.gitconfig
+
+[include]
+    # Name/email live OUT of the repo (like secrets). Create this file:
+    #   ~/.gitconfig.local
+    # with:
+    #   [user]
+    #       name = Deep
+    #       email = you@example.com
+    path = ~/.gitconfig.local
+
+[core]
+    editor = nvim
+    pager = delta
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    autoSetupRemote = true
+
+[fetch]
+    prune = true
+
+[rebase]
+    autoStash = true
+
+[merge]
+    conflictstyle = zdiff3
+
+[diff]
+    algorithm = histogram
+    colorMoved = default
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true          # n / N jump between diff sections
+    line-numbers = true
+    side-by-side = false
+
+[alias]
+    st = status -sb
+    lg = log --oneline --graph --decorate -20
+    last = log -1 HEAD --stat
+    unstage = restore --staged
+    amend = commit --amend --no-edit

@@ -1,0 +1,10 @@
+# ~/.gitignore_global
+.DS_Store
+*.swp
+*.swo
+.env
+.env.*
+.direnv/
+__pycache__/
+node_modules/
+.venv/
