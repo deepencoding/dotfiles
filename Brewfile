@@ -8,7 +8,7 @@ brew "fish"          # interactive shell
 brew "starship"      # prompt
 brew "tmux"          # terminal multiplexer
 brew "neovim"        # editor
-brew "git"
+brew "git"           # version control
 
 # ── Modern CLI stack ──────────────────────────────────────────────────
 brew "fzf"           # fuzzy finder
@@ -19,6 +19,7 @@ brew "bat"           # cat with syntax highlighting
 brew "eza"           # ls, but modern
 brew "git-delta"     # diffs worth reading
 brew "lazygit"       # terminal git UI
+brew "glow"          # markdown renderer
 
 # ── Neovim build/runtime deps ─────────────────────────────────────────
 brew "node"          # some LSP servers need it
