@@ -1,13 +1,7 @@
 # Daily Driver Cheatsheet
 
-Every binding here matches your actual config. Keep this open in workspace 4
-until it's muscle memory. `Note`: on your Ghostty, **Option = Alt**, so
+Until it's muscle memory. `Note`: on your Ghostty, **Option = Alt**, so
 AeroSpace's `alt-*` bindings are pressed with the ⌥ Option key.
-
-The mental model that makes all of this click: **AeroSpace moves you between
-whole windows and workspaces. tmux moves you between panes inside one terminal.
-Vim moves you inside one file.** Three nested layers, same `h/j/k/l` direction
-keys at every layer so your hands never relearn "left/down/up/right."
 
 ---
 
@@ -173,8 +167,6 @@ native and always available:
 | `⌘ ⇧ ← / →` | Select to line start / end |
 | `⌥ ⌫` | Delete previous word |
 | `⌘ ⌫` | Delete to line start |
-| `Ctrl-a / Ctrl-e` | Line start / end (emacs-style, works everywhere) |
-| `Ctrl-k` | Delete to end of line |
 
 ---
 
@@ -194,20 +186,6 @@ native and always available:
 | `⌘ ⇧ a` | Manage add-ons |
 | `space` / `⇧ space` | Scroll down / up a screen |
 
-### Add Vimium (extension) for true mouse-free browsing
-Install from Firefox Add-ons, then:
-| Key | Action |
-|---|---|
-| `f` | Show link hints — type the letters to click a link |
-| `F` | Same, but open link in new tab |
-| `j / k` | Scroll down / up |
-| `gg / G` | Top / bottom of page |
-| `H / L` | Back / forward in history |
-| `J / K` | Previous / next tab |
-| `x` | Close current tab |
-| `o` | Open a URL / bookmark (fuzzy) |
-| `/` | Search page, `n` for next match |
-
 ---
 
 ## Slack — keyboard-native
@@ -218,29 +196,11 @@ Install from Firefox Add-ons, then:
 | `⌘ t` | Same as `⌘ k` on some versions — quick switcher |
 | `⌘ ⇧ k` | Browse DMs |
 | `⌘ ⇧ l` | Browse channels |
-| `Ctrl-g` | Search |
-| `⌘ ↑ / ↓` | Previous / next channel in sidebar |
-| `⌥ ↑ / ↓` | Previous / next *unread* channel |
+| `⌘ g` | Search |
+| `⌥ ↑ / ↓` | Previous / next channel in sidebar |
 | `⌘ ⇧ a` | All unreads |
 | `⌘ [ / ]` | History back / forward (like a browser) |
-| `e` (on a message, hover) | Edit / react menu |
+| `e` (on a message, hover) | Edit |
 | `⌘ ⇧ \\` | React to last message |
-| `up arrow` (empty input) | Edit your last message |
 | `⌘ ⇧ m` | Mentions & reactions |
 | `Esc` | Mark channel read |
-
----
-
-## The one workflow that ties it together
-
-A realistic morning, all keyboard:
-
-1. `⌥ 1` → Ghostty. Type `t` → your tmux session "main" attaches.
-2. `Ctrl-b |` → split. Left pane: `nvim`. Right pane: run tests / server.
-3. `z chosenly` → jump to the repo. `lg` → stage and commit in lazygit.
-4. `⌥ 2` → Firefox. `⌘ l` → search a doc. `f` → click the result (Vimium).
-5. `⌥ 3` → Slack. `⌘ k` → jump to the channel you need. Reply. `Esc`.
-6. `⌥ 1` → back to Ghostty, `Ctrl-b h/l` between panes. Never touched the mouse.
-
-The direction keys `h/j/k/l` mean the same thing at all three layers. That
-repetition is the whole point — one motion vocabulary, three scopes.
